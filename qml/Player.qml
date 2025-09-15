@@ -52,8 +52,6 @@ Item {
             onPositionChanged: {
                 playerShape.normalizedX = playerShape.x / court.width
                 playerShape.normalizedY = playerShape.y / court.height
-                console.log("player.x",player.playerName, ": ", playerShape.x)
-                console.log("player.y",player.playerName, ": ", playerShape.y)
             }
             onEntered:{
                 player.isPlayerArea = true
@@ -67,7 +65,6 @@ Item {
             }
             onClicked:{
                 isClicked = !isClicked
-                console.log("isClicked", isClicked)
             }
         }
         Component.onCompleted: {

@@ -2,7 +2,7 @@ import QtQuick
 
 Item {
     id: ball
-
+    z:1
 
     Rectangle{
         id: ballShape

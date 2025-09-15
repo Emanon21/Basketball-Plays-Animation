@@ -6,7 +6,8 @@ Item {
     anchors.fill: parent
     property bool isDrawing: false
     property Item court
-    property double buttonSize: 0.10
+    property double buttonSizeWidth: 0.10
+    property double buttonSizeHeight: 0.05
 
     Canvas {
         id: paintCanvas
@@ -47,8 +48,8 @@ Item {
 
     Button{
         id:clearButton
-        width: buttonSize * parent.width
-        height: buttonSize * parent.height
+        width: buttonSizeWidth * parent.width
+        height: buttonSizeHeight * parent.height
         anchors.bottom: parent.bottom
         anchors.right: parent.right
         text: "clear"
@@ -61,14 +62,13 @@ Item {
 
     Button{
         id: drawButton
-        width: buttonSize * parent.width
-        height: buttonSize * parent.height
+        width: buttonSizeWidth * parent.width
+        height: buttonSizeHeight * parent.height
         anchors.bottom: parent.bottom
         anchors.right: clearButton.left
         text: "draw"
         onClicked:{
             root.isDrawing = !root.isDrawing
-            console.log("isDrawing: ", root.isDrawing)
         }
     }
 }

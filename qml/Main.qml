@@ -17,6 +17,7 @@ Window {
         height: width * nbaCourtRatio
     }
 
+
     AddPlayerButton{
         z:1
         id: addPlayerButton
@@ -32,4 +33,5 @@ Window {
         id: ballButton
         court: court
     }
+
 }
