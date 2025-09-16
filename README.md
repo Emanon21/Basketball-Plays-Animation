@@ -16,7 +16,7 @@ A coaching board in desktop and mobile devices in the future.
 ![Basketball Play Demo](assets/bballAnimation.gif)
 
 ## How to run this project
-- Clone respitory
+- Clone repository
 - Install [Qt](https://www.qt.io/download-dev)
 - Open project in Qt Creator
 - Build and run by clicking the run button in Qt Creator
